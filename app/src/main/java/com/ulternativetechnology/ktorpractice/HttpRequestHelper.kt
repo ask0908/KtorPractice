@@ -3,7 +3,6 @@ package com.ulternativetechnology.ktorpractice
 import android.util.Log
 import io.ktor.client.*
 import io.ktor.client.engine.android.*
-import io.ktor.client.engine.cio.*
 import io.ktor.client.features.*
 import io.ktor.client.features.json.*
 import io.ktor.client.features.json.serializer.*
@@ -15,7 +14,7 @@ import kotlinx.coroutines.withContext
 
 class HttpRequestHelper {
     private val TAG = this.javaClass.simpleName
-    // HttpClient(CIO)보다 Android가 더 빨리 데이터를 가져온다
+    // HttpClient(CIO)보다 Android가 더 빨리 데이터를 가져온다. CIO 의존성 삭제함
     private val client: HttpClient = HttpClient(Android) {
         defaultRequest {
 //            header("apiHeader", "Bearer ")

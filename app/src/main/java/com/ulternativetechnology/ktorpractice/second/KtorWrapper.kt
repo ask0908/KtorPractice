@@ -1,4 +1,4 @@
-package com.ulternativetechnology.ktorpractice.other
+package com.ulternativetechnology.ktorpractice.second
 
 import io.ktor.client.*
 import io.ktor.client.engine.android.*
@@ -9,7 +9,6 @@ import io.ktor.client.request.*
 import io.ktor.client.request.forms.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
-import io.ktor.http.ContentDisposition.Companion.File
 import java.io.File
 
 data class FormDataFile(
