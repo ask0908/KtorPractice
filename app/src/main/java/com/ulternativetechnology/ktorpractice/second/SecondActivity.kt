@@ -1,4 +1,4 @@
-package com.ulternativetechnology.ktorpractice.other
+package com.ulternativetechnology.ktorpractice.second
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,7 +12,6 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import org.json.JSONArray
-import org.json.JSONObject
 
 /* https://www.youtube.com/watch?v=goJGH77zjag */
 class SecondActivity : AppCompatActivity() {
